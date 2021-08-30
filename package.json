@@ -1,0 +1,23 @@
+{
+  "name": "budgetsave",
+  "version": "1.0.0",
+  "description": "A budget saving application that can be used online or offline",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NateJonesIII/budgetSave.git"
+  },
+  "keywords": [
+    "budget"
+  ],
+  "author": "Nate Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NateJonesIII/budgetSave/issues"
+  },
+  "homepage": "https://github.com/NateJonesIII/budgetSave#readme"
+}
