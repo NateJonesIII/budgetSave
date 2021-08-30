@@ -26,7 +26,7 @@ request.onerror = function (e) {
 };
 
 function checkDatabase() {
-  console.log('check db invoked');
+  console.log('Checking DB in process');
 
   // Open a transaction on your BudgetStore db
   let transaction = db.transaction(['BudgetStore'], 'readwrite');
@@ -69,7 +69,7 @@ function checkDatabase() {
 }
 
 request.onsuccess = function (e) {
-  console.log('success');
+  console.log('Request Successful!');
   db = e.target.result;
 
   // Check if app is online before reading from db
@@ -80,7 +80,7 @@ request.onsuccess = function (e) {
 };
 
 const saveRecord = (record) => {
-  console.log('Save record invoked');
+  console.log('Record has been saved!');
   // Create a transaction on the BudgetStore db with readwrite access
   const transaction = db.transaction(['BudgetStore'], 'readwrite');
 

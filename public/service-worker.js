@@ -1,3 +1,4 @@
+//Files to store to browser cache
 const FILES_TO_CACHE = [
 	"/",
 	"/index.html",

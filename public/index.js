@@ -1,6 +1,8 @@
+// Dependencies
 let transactions = [];
 let myChart;
 
+// Retrieve transaction
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -69,7 +71,7 @@ function populateChart() {
       data: {
         labels,
         datasets: [{
-            label: "Total Over Time",
+            label: "Total Amount Over Time",
             fill: true,
             backgroundColor: "#6666ff",
             data
@@ -83,7 +85,7 @@ function sendTransaction(isAdding) {
   let amountEl = document.querySelector("#t-amount");
   let errorEl = document.querySelector(".form .error");
 
-  // validate form
+  // validate form values to check if empty
   if (nameEl.value === "" || amountEl.value === "") {
     errorEl.textContent = "Missing Information";
     return;
@@ -112,7 +114,7 @@ function sendTransaction(isAdding) {
   populateTable();
   populateTotal();
   
-  // also send to server
+  // Retrieve transaction data from body
   fetch("/api/transaction", {
     method: "POST",
     body: JSON.stringify(transaction),

@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/NateJonesIII/budgetSave/issues"
   },
-  "homepage": "https://github.com/NateJonesIII/budgetSave#readme"
+  "homepage": "https://github.com/NateJonesIII/budgetSave#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lite-server": "^2.6.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.2",
+    "morgan": "^1.10.0"
+  }
 }
